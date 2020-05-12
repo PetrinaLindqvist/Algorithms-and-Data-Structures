@@ -26,10 +26,10 @@ namespace part1
             Console.WriteLine(t.Calculate(new int[] { 4, 2, 9, 1, 9, 2, 5 })); // 323
 
             //Ex 4
-            //LuckyNumbers luck = new LuckyNumbers();
-            //Console.WriteLine(luck.Calculate(1, 10)); // 2
-            //Console.WriteLine(luck.Calculate(123, 321)); // 0
-            //Console.WriteLine(luck.Calculate(1, 1000000)); // 126
+            LuckyNumbers luck = new LuckyNumbers();
+            Console.WriteLine(luck.Calculate(1, 10)); // 2
+            Console.WriteLine(luck.Calculate(123, 321)); // 0
+            Console.WriteLine(luck.Calculate(1, 1000000)); // 126
         }
     }
 }
