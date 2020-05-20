@@ -6,22 +6,30 @@ namespace part2
     {
         public int Calculate(int[] t)
         {
-          int leftSum = 0;
-        
-          for (int i = 0; i < t.Length; i++)
+          int sum = 0;
+          foreach (int i in t)
           {
-              leftSum += t[i];
-                 
-               int rightSum = 0;    
-               for (int j = i + 1; j < t.Length; j++) 
-               
-                 rightSum += t[j];
-
-              if(leftSum == rightSum)
-              return i +1;  
+              sum += i;
           }
-          
-          return -1;
+          if (sum % 2 != 0)
+          {
+            return 0;
+          }       
+          int half = sum / 2;
+          int left = 0;
+          int splits = 0;    
+          for (int i = 0; i < t.Length -1; i++) 
+          {
+            if(left == half)
+            {
+              splits++;
+            }
+            if (i< t.Length)
+            {
+              left += t[i];
+            }
+          }
+          return splits;
         
         }
 
