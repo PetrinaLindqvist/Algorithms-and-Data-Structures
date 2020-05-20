@@ -4,9 +4,9 @@ using System.Text;
 namespace part3
 {
 
-    public class BinarySearch
+    public class Inversions
     {
-        public void bool Find(int[] t, int x)
+        public int[] Create(int n, int k)
         {
 
         }
