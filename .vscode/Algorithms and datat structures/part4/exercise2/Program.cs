@@ -8,7 +8,7 @@ namespace part4
         static void Main(string[] args)
         {
             //Ex 1
-            LinkedList myLinks = new LinkedList();
+            /*LinkedList myLinks = new LinkedList();
             myLinks.AddLast(1);
             myLinks.AddFirst(2);
             myLinks.AddLast(3);
@@ -16,13 +16,13 @@ namespace part4
             myLinks.RemoveFirst();
             Console.WriteLine(myLinks); // for example: 1, 3
             Console.WriteLine(myLinks.GetNode(0)); // 1
-            Console.WriteLine(myLinks.GetNode(1)); // 3
+            Console.WriteLine(myLinks.GetNode(1)); // 3*/
 
             //Ex 2
-            /*CircleGame g = new CircleGame();
+            CircleGame g = new CircleGame();
             Console.WriteLine(g.Last(7)); // 7
             Console.WriteLine(g.Last(4)); // 1
-            Console.WriteLine(g.Last(123)); // 119*/
+            Console.WriteLine(g.Last(123)); // 119
 
             //Ex 3
             /*SmallestDistance s = new SmallestDistance();
