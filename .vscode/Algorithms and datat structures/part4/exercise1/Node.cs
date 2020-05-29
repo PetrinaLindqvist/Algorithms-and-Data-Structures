@@ -3,7 +3,7 @@ using System.Text;
 
 namespace part4
 {
-    public class Node
+    public class Node 
     {
         public int value;
         public Node next {get; set;}
