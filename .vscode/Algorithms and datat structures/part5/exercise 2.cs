@@ -6,11 +6,14 @@ namespace part5
     {
         public int n;
         public List<int> [] graph;
+
+        public List<int> visitedList;
         public Connectivity(int n)
         {
             this.n = n;
-            this.graph = new List<int>[n + 1];
-            for (int i =1; i<=n; i++)
+            this.graph = new List<int> [n + 1];
+            this.visitedList = new List<int>();
+            for (int i = 1; i <= n; i++)
             {
                 graph[i] = new List<int>();
             }
@@ -24,16 +27,18 @@ namespace part5
 
         public int Calculate(int x)
         {
-            List<int> visitedList = graph[x];
-            if(visitedList.Contains(x))
+            
+            if (visitedList.Contains(x))
             {
                 return 0;
             }
+            visitedList.Add(x);
+
             foreach (int i in graph[x])
             {
-                Calculate(n);
+                Calculate(i);
             }
-            return visitedList.Count;
+            return visitedList.Count -1;
         }
 
 
