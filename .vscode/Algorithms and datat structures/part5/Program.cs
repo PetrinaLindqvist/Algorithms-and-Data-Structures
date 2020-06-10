@@ -25,7 +25,7 @@ namespace part5
             Console.WriteLine(k.Calculate()); // 2*/
 
             //Ex4
-            Communication com = new Communication(6);
+            /*Communication com = new Communication(6);
             com.AddConnection(1, 2);
             com.AddConnection(2, 3);
             com.AddConnection(1, 3);
@@ -33,17 +33,17 @@ namespace part5
             com.AddConnection(5, 6);
             Console.WriteLine(com.Examine(1, 4)); // true
             Console.WriteLine(com.Examine(2, 5)); // false
-            Console.WriteLine(com.Examine(5, 6)); // true
+            Console.WriteLine(com.Examine(5, 6)); // true*/
 
             //Ex5
-            /*Labyrinth l = new Labyrinth();
+            Labyrinth l = new Labyrinth();
             char[,] c = 
             { {'#','#','#','#','#','#','#'},
             {'#','x','#','.','y','.','#'},
             {'#','.','#','.','#','.','#'},
             {'#','.','.','.','.','.','#'},
             {'#','#','#','#','#','#','#'} };
-            Console.WriteLine(l.Search(c)); // DDRRUUR*/
+            Console.WriteLine(l.Search(c)); // DDRRUUR
         }
 
     }
