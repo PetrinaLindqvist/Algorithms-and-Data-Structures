@@ -1,4 +1,4 @@
-/*using System;
+using System;
 using System.Collections.Generic;
 namespace part6
 {
@@ -81,9 +81,17 @@ namespace part6
                     } 
                 }
             }
-            return distance[x, y];
+            if (distance[x, y] == int.MaxValue)
+            {
+                return -1;
+            }
+            else
+            {
+                return distance[x, y];
+            }
+        
         }
 
     }
 
-}*/
+}
