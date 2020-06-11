@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Collections.Generic;
 namespace part6
 {
@@ -32,6 +32,7 @@ namespace part6
 
         public int Calculate(int x, int y)
         {
+            
             int [] distance = new int[n + 1];
             for(int i = 0; i < n + 1; i++)
             {
@@ -63,4 +64,4 @@ namespace part6
 
     }
 
-}
+}*/
