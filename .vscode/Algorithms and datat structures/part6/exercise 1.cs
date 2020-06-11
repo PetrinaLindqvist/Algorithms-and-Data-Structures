@@ -1,4 +1,4 @@
-/*using System;
+using System;
 using System.Collections.Generic;
 namespace part6
 {
@@ -17,7 +17,7 @@ namespace part6
     public class ShortestPath
     {
         public int n;
-        public List <Edge> edges;
+        public List<Edge> edges;
         public ShortestPath(int n)
         {
             this.n = n;
@@ -32,13 +32,14 @@ namespace part6
 
         public int Calculate(int x, int y)
         {
-            
+            int INF = 9999;
             int [] distance = new int[n + 1];
-            for(int i = 0; i < n + 1; i++)
+            for(int i = 1; i < n + 1; i++)
             {
-                distance[i]= int.MaxValue;
+                distance[i]= INF;
             }
             distance[x] = 0;
+
             while (true)
             {
                 bool change = false;
@@ -53,15 +54,25 @@ namespace part6
                         distance[i.end] = newCurrent;
                         change = true;
                     }
-                    if (change == false)
+                }
+                if (change == false)
                     {
                         break;
                     }
-                }
-            return distance[y];
             }
+            if (distance[y] == INF)
+            {
+                return -1;
+            }
+            else
+            {
+                return distance[y]; 
+            }
+  
+            
         }
 
     }
 
-}*/
+
+}
